@@ -1,0 +1,85 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include <windows.h>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+bool isHolds = true;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+    Image1->Canvas->Pen->Width = 10;
+    //Image1->Canvas->Brush->Color = clBlack;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift, int X,
+          int Y)
+{
+
+    if(Shift.Contains(ssLeft)){
+    	if(isHolds) Image1->Canvas->MoveTo(X,Y);
+        Image1->Canvas->LineTo(X, Y);
+        Image1->Canvas->MoveTo(X, Y);
+
+        //Image1->Canvas->Rectangle(X-5,Y-5,X+5,Y+5);
+    }
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::ClearButtonClick(TObject *Sender)
+{
+    Image1->Canvas->Pen->Width = 0;
+    Image1->Canvas->Brush->Color = clWhite;
+    Image1->Canvas->Rectangle(-1,-1,Image1->Width+1, Image1->Height+1);
+    Image1->Canvas->Brush->Color = clBlack;
+    Image1->Canvas->Pen->Width = 10;
+
+
+    Image2->Canvas->Brush->Color = clWhite;
+    Image2->Canvas->Rectangle(-1,-1,Image2->Width+1, Image2->Height+1);
+    Image2->Canvas->Brush->Color = clBlack;
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+    int image16[16][16];
+    float q = 0;
+    int BlackCounter = 0;
+    for(int iL = 0; iL <= 15; iL++){
+        for(int jL = 0; jL <= 15; jL++){
+
+        	for(int i = iL*10; i <= iL*10+10; i++){
+
+        		for(int j = jL*10; j <= jL*10+10; j++){
+        	    	if(Image1->Canvas->Pixels[j][i] == clBlack) BlackCounter++;
+                    //Image1->Canvas->Pixels[j][i] = clRed;
+                }
+    		}
+            q = BlackCounter / 256.0f;
+            if(q >= 0.1f) image16[jL][iL] = 1;
+            else image16[jL][iL] = 0;
+            BlackCounter = 0;
+    	}
+    }
+
+    Image2->Canvas->Pen->Width = 0;
+    Image2->Canvas->Brush->Color = clBlack;
+
+    for (int i = 0; i < 16; i++){
+        for (int j = 0; j < 16; j++) {
+            StringGrid1->Cells[i][j] = image16[i][j];
+            if(image16[i][j] == 1)Image2->Canvas->Rectangle(i*10,j*10,(i*10)+10,(j*10)+10);
+            //if(image16[i][j])
+        }
+    }
+
+
+}
+//---------------------------------------------------------------------------
