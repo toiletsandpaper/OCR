@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = 'OCR'
   ClientHeight = 507
-  ClientWidth = 1031
+  ClientWidth = 822
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -27,11 +27,17 @@ object Form1: TForm1
     Height = 160
   end
   object Label1: TLabel
-    Left = 440
-    Top = 32
-    Width = 31
+    Left = 433
+    Top = 29
+    Width = 41
     Height = 13
-    Caption = 'Label1'
+  end
+  object Label2: TLabel
+    Left = 394
+    Top = 29
+    Width = 33
+    Height = 13
+    Caption = 'Letter:'
   end
   object ClearButton: TButton
     Left = 280
@@ -70,6 +76,7 @@ object Form1: TForm1
     Width = 75
     Height = 25
     Caption = 'SaveXML'
+    Enabled = False
     TabOrder = 3
     OnClick = SaveXMLButtonClick
   end
@@ -81,6 +88,7 @@ object Form1: TForm1
     MaxLength = 1
     TabOrder = 4
     TextHint = 'Letter'
+    OnChange = Edit1Change
   end
   object CheckButton: TButton
     Left = 480
@@ -92,12 +100,13 @@ object Form1: TForm1
     OnClick = CheckButtonClick
   end
   object XMLDocument1: TXMLDocument
+    Active = True
     FileName = 
       'C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untit' +
       'led1.xml'
     NodeIndentStr = '    '
-    Left = 824
-    Top = 96
+    Left = 616
+    Top = 240
     DOMVendorDesc = 'MSXML'
   end
 end

@@ -27,11 +27,13 @@ __published:	// IDE-managed Components
 	TEdit *Edit1;
 	TButton *CheckButton;
 	TLabel *Label1;
+	TLabel *Label2;
 	void __fastcall Image1MouseMove(TObject *Sender, TShiftState Shift, int X, int Y);
 	void __fastcall ClearButtonClick(TObject *Sender);
 	void __fastcall TransformButtonClick(TObject *Sender);
 	void __fastcall SaveXMLButtonClick(TObject *Sender);
 	void __fastcall CheckButtonClick(TObject *Sender);
+	void __fastcall Edit1Change(TObject *Sender);
 
 private:	// User declarations
 public:		// User declarations

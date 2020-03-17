@@ -54,7 +54,7 @@ void __fastcall TForm1::ClearButtonClick(TObject *Sender) {
 
 // ---------------------------------------------------------------------------
 void __fastcall TForm1::TransformButtonClick(TObject *Sender) {
-	float q = 0;
+ float q = 0;
 	int BlackCounter = 0;
 	for (int iL = 0; iL <= 15; iL++) {
 		for (int jL = 0; jL <= 15; jL++) {
@@ -85,13 +85,12 @@ void __fastcall TForm1::TransformButtonClick(TObject *Sender) {
 				Image2->Canvas->Rectangle(i*10, j*10, (i*10) + 10, (j*10) + 10);
 		}
 	}
-
 }
 
 // ---------------------------------------------------------------------------
 void __fastcall TForm1::SaveXMLButtonClick(TObject *Sender) {
     if(Edit1->Text != "") {
-
+        TForm1::TransformButtonClick(this);
 
         _di_IXMLlettersType Letters = Getletters(XMLDocument1);
         _di_IXMLsignatureType Signature = Letters->Add();
@@ -113,11 +112,13 @@ void __fastcall TForm1::SaveXMLButtonClick(TObject *Sender) {
         delete[] str;
 
         XMLDocument1->SaveToFile(XMLDocument1->FileName);
+        Edit1->Text = "";
     }
 }
 // ---------------------------------------------------------------------------
 void __fastcall TForm1::CheckButtonClick(TObject *Sender)
 {
+
         _di_IXMLlettersType Letters = Getletters(XMLDocument1);
         float
         	Accuracy = 0.0f,
@@ -142,9 +143,15 @@ void __fastcall TForm1::CheckButtonClick(TObject *Sender)
             }
             Matches = 0;
         }
-        Edit1->Text = "";
 
 
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Edit1Change(TObject *Sender)
+{
+    if(Edit1->Text == "") SaveXMLButton->Enabled = false;
+    else  SaveXMLButton->Enabled = true;
 }
 //---------------------------------------------------------------------------
 
