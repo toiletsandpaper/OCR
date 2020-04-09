@@ -13,6 +13,9 @@
 #include <Xml.XMLDoc.hpp>
 #include <Xml.xmldom.hpp>
 #include <Xml.XMLIntf.hpp>
+#include <System.Net.HttpClient.hpp>
+#include <System.Net.HttpClientComponent.hpp>
+#include <System.Net.URLClient.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {

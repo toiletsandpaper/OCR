@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2020.03.17 14:45:53.487,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2020.03.17 14:45:53.845,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2020.03.17 14:49:43.812,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>2020.03.17 14:49:43.812,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.cpp=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2020.03.17 14:49:43.812,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.dfm=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2020.03.17 14:49:45.346,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Project1PCH1.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2020.03.17 14:49:46.300,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Project1.cbproj=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
-    <Transaction>2020.03.17 17:48:29.564,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.xml</Transaction>
-    <Transaction>2020.03.17 19:29:29.139,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.cpp</Transaction>
-    <Transaction>2020.03.17 19:32:01.286,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Letters.cpp=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.cpp</Transaction>
-    <Transaction>2020.03.17 19:32:01.287,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Letters.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.h</Transaction>
-    <Transaction>2020.03.17 19:32:20.783,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\MainOCR.cpp=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.cpp</Transaction>
-    <Transaction>2020.03.17 19:32:20.783,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\MainOCR.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.h</Transaction>
-    <Transaction>2020.03.17 19:32:20.783,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\MainOCR.dfm=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.dfm</Transaction>
-    <Transaction>2020.03.17 21:21:51.445,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.cpp</Transaction>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.783,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\MainOCR.dfm=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.845,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.139,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.487,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.287,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Letters.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.783,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\MainOCR.cpp=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.564,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.xml</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.445,=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.812,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.dfm=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.783,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\MainOCR.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.346,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Project1PCH1.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.812,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.cpp=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.300,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Project1.cbproj=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.812,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Unit1.h=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.286,C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Letters.cpp=C:\Users\xFiLiNx\Documents\Embarcadero\Studio\Projects\OCR\Untitled1.cpp</Transaction>
   </Transactions>
-  <ProjectSortOrder AutoSort="0" SortType="0">
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="Letters.cpp"/>
     <File Path="Letters.cpp"/>
     <File Path="Letters.h"/>

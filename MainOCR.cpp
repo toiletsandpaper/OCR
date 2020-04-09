@@ -14,7 +14,6 @@
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TForm1 *Form1;
-bool isHolds = true;
 int image16[16][16];
 
 // ---------------------------------------------------------------------------
@@ -27,15 +26,12 @@ __fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner) {
 void __fastcall TForm1::Image1MouseMove(TObject *Sender, TShiftState Shift,
 	int X, int Y) {
 
-	if (Shift.Contains(ssLeft)) {
-		if (isHolds)
-			Image1->Canvas->MoveTo(X, Y);
-		Image1->Canvas->LineTo(X, Y);
-		Image1->Canvas->MoveTo(X, Y);
-
-		// Image1->Canvas->Rectangle(X-5,Y-5,X+5,Y+5);
-	}
-
+    if (Shift.Contains(ssLeft))
+    {
+        Image1->Canvas->LineTo(X, Y);
+        Image1->Canvas->MoveTo(X, Y);
+    }
+    else Image1->Canvas->MoveTo(X, Y);
 }
 
 // ---------------------------------------------------------------------------
@@ -67,7 +63,7 @@ void __fastcall TForm1::TransformButtonClick(TObject *Sender) {
 				}
 			}
 			q = BlackCounter / 256.0f;
-			if (q >= 0.1f)
+			if (q >= 0.15f)
 				image16[jL][iL] = 1;
 			else
 				image16[jL][iL] = 0;
@@ -154,4 +150,3 @@ void __fastcall TForm1::Edit1Change(TObject *Sender)
     else  SaveXMLButton->Enabled = true;
 }
 //---------------------------------------------------------------------------
-
